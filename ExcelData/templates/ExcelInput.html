@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Excel Data</title>
+</head>
+<body>
+<form action="" method="POST" enctype="multipart/form-data" > {% csrf_token %}
+	 <div class="upload-btn-wrapper">
+			
+			 <label for="file-input">Upload an Excel File</label>
+			 <input type="file" name="excel_file" id="file-input" required="True">
+			  <button class="btn">Upload </button>
+	</div>
+</form>
+
+</body>
+</html>
+
+<style>
+
+.btn{
+	width: 100px;
+	height: 40px;
+	background-color: #15e2bcf5;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+	font-size: 15px;
+
+}
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+label[for="file-input"] {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1em;
+  color: #fff;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  cursor: pointer !important;
+}
+input[type="file"]::-webkit-file-upload-button {
+  background: #e62163;
+  border: 0;
+  padding: 1em 2em;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.2em;
+}
+input[type="file"]::-ms-browse {
+  background: #e62163;
+  border: 0;
+  padding: 1em 2em;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.2em;
+}
+
+body {
+  margin: 2em;
+  background: #212122;
+  font-family: "Arimo", sans-serif;
+  color: #fff;
+}
+
+hr {
+  opacity: 0.3;
+  margin: 2em 0;
+}
+
+</style>
+	 
